@@ -11,13 +11,12 @@ public class User {
     private Car[] cart = new Car[MAX_CART_SIZE];
     private int cartSize = 0;
 
-    public User(int id, String username, String password, boolean isAdmin, Car[] cart, int cartSize) {
+    public User(int id, String username, String password, boolean isAdmin) {
         this.id = id;
         this.username = username;
         this.password = password;
         this.isAdmin = isAdmin;
-        this.cart = cart;
-        this.cartSize = cartSize;
+
     }
 
     public int getId() {
